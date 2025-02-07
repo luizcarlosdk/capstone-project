@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TCC - Luiz Carlos</title>
+  <script src="https://kit.fontawesome.com/3f9fd3a1cd.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1d0d44;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #1d0d44;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .institute {
+      font-size: large;
+      margin: 0;
+    }
+
+    .link {
+      text-decoration: none;
+      padding: 3px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 8px 16px;
+      background-color: #1d0d44;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      width: auto;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    .button i {
+      font-size: 24px;
+      color: white;
+    }
+
+    .button span {
+      color: white;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+      max-width: 13em;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10em 0 10em;
+      align-items: center;
+    }
+
+    .introduction-text {
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Capstone Project </h1>
+    <div class="">
+      <p class="institute">Computer Science Department</p>
+      <p class="institute">Institute of Mathematics and Statistics</p>
+      <p class="institute">University of São Paulo</p>
+    </div>
+    <div>
+      <p class="name">Luiz Carlos Costa da Silva</p>
+      <p><b>Advisor</b>: M.Sc. Renato Cordeiro Ferreira</p>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="content">
+
+      <h1 class="capstone-title">Divination: Applying Retrieval-Augmented Generation with LLMs to generate
+        content for D&D</h1>
+      <div>
+        <p class="introduction-text">The Divination project provides an application that uses the fantasy tabletop
+          role-playing
+          game Dungeons and Dragons (D&D) sourcebooks to help DMs manage players’ adventures.</p>
+        <p class="introduction-text">The system is divided into a front-end and a
+          back-end. The front-end uses the Vue3js framework to provide a user chat interface, and
+          the back-end uses Python+FASTAPI powered by
+          ChatGPT-4o LLM</p>
+        <p class="introduction-text">To answer the questions as faithfully as possible, avoiding LLM Hallucinations, the
+          back-end uses Retrieval-Augmented Generation (RAG)
+          as a structure; this structure reads
+          external data from the D&D Free Rules (2024)
+          page and stores it on a Vector Store Database.
+          When a query is received in the back-end, the
+          RAG retrieves the most relevant chunks from the
+          vector store and sends them to the rest of the system to use as context to give the most accurate
+          answer to the user</p>
+      </div>
+
+      <div class="icons">
+        <a class="link" href="./proposta.pdf">
+          <div class="button" style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-pen-to-square" style="font-size: 36px; color: white;"></i>
+            <span>Proposal</span>
+          </div>
+        </a>
+
+        <a class="link" href="./MonographLuizCarlos.pdf">
+          <div class="button" style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-newspaper" style="font-size: 36px; color: white;"></i>
+            <span>Monograph</span>
+          </div>
+        </a>
+
+        <a class="link" href="poster.pdf">
+          <div class="button" style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-regular fa-file-image" style="font-size: 36px; color: white;"></i>
+            <span>Poster</span>
+          </div>
+        </a>
+
+        <a class="link" href="Apresentação-LuizCarlos-finalv2.pdf">
+          <div class="button" style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-file-powerpoint" style="font-size: 36px; color: white;"></i>
+            <span>Presentation</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+
+  </main>
+
+  <footer>
+    <a href="https://github.com/luizcarlosdk/Divination">
+      <i class="fa fa-github" style="font-size:36px;color: white;"></i>
+    </a>
+
+  </footer>
+</body>
+
+</html>
